@@ -1,0 +1,25 @@
+package com.company;
+import java.util.*;
+public class SwapTwoNumbers {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter two numbers");
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int temp;
+        temp=a;
+        a=b;
+        b=temp;
+        System.out.println(" Swapped numbers are "+a+" "+b);
+
+    }
+}
+
+
+output
+
+Enter two numbers
+3
+6
+Swapped numbers are 6 3
