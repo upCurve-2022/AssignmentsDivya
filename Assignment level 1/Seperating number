@@ -1,0 +1,20 @@
+package com.company;
+import java.util.*;
+public class ExtractNumbers {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter a number");
+        double a=sc.nextDouble();
+        int b= (int) a;
+        double c= a - b;
+        c=c*100;
+        int k = (int) c;
+        System.out.println(b+" "+k);
+    }
+}
+
+output
+
+Enter a number
+34.67
+34 67
