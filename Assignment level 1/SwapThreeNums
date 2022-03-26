@@ -1,0 +1,31 @@
+package com.company;
+import java.util.*;
+public class SwapThreeNumbers {
+    static int a,b,c;
+    static void swap()
+    {
+        a = a + b + c;
+        b = a - (b + c);
+        c = a - (b + c);
+        a = a - (b + c);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter three numbers");
+        a = sc.nextInt();
+        b = sc.nextInt();
+        c = sc.nextInt();
+        swap();
+        System.out.println(a+" "+b+" "+c);
+    }
+}
+
+
+output
+
+Enter three numbers
+4
+5
+6
+6 4 5
