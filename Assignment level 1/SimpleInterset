@@ -1,0 +1,28 @@
+//code
+
+package com.company;
+import java.util.*;
+public class SimpleInterest {
+    public static void main(String[] args) {
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Enter principal amount");
+        float p=sc.nextFloat();
+        System.out.println("Enter time");
+        float n=sc.nextFloat();
+        System.out.println("Enter rate of interest");
+        float r=sc.nextFloat();
+        float SimpleInterest;
+        SimpleInterest=(p*n*r)/100;
+        System.out.println("Simple Interest = "+SimpleInterest);
+    }
+}
+
+output
+
+Enter principal amount
+340.7
+Enter time
+3.5
+Enter rate of interest
+2.9
+Simple Interest = 34.58105
