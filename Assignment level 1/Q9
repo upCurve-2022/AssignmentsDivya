@@ -1,0 +1,27 @@
+//reverse a number
+
+package com.company;
+
+import java.util.Scanner;
+
+public class ReverseNum {
+    public static void main(String[] args) {
+        int reverse = 0, remainder;
+        System.out.println("Enter a number to reverse" );
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        while(a!=0)
+        {
+            remainder = a % 10;
+            reverse = reverse * 10 + remainder;
+            a /= 10;
+        }
+        System.out.println("Reverse Number is = "+reverse);
+    }
+}
+
+output
+
+Enter a number to reverse
+123456
+Reverse Number is = 654321
