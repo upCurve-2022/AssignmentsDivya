@@ -1,0 +1,21 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Series1 {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++)
+        {
+            if(i==4)
+                continue;
+            System.out.print(i*i+" ");
+        }
+    }
+}
+
+output
+
+8
+1 4 9 25 36 49 64 
