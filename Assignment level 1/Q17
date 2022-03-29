@@ -1,0 +1,41 @@
+// Prime in a range
+package com.company;
+
+import java.util.Scanner;
+
+public class PrimeNums {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter Values");
+        int n = sc.nextInt();
+        int m= sc.nextInt();
+        int i,j,flag=0;
+        for(i=n;i<=m;i++)
+        {
+            flag=0;
+            if(i==0||i==1)
+            {
+                flag=1;
+                break;
+            }
+            for(j=2;j<=i/2;j++)
+            {
+                if(i%j==0)
+                {
+                    flag=1;
+                    break;
+                }
+            }
+            if(flag==0)
+            {
+                System.out.print(i+" ");
+            }
+        }
+
+    }
+}
+
+output
+
+12  15
+13 
