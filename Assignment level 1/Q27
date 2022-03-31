@@ -1,0 +1,24 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Armstrong {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int Number = sc.nextInt();
+        int OriginalNumber = Number;
+        int Remainder,Result=0;
+        while(OriginalNumber!=0)
+        {
+            Remainder = OriginalNumber % 10;
+            Result += Math.pow(Remainder, 3);
+            OriginalNumber /= 10;
+        }
+        if(Result==Number)
+        {
+            System.out.println("Given number is Armstrong");
+        }
+        else
+            System.out.println("Given number is not an Armstrong number");
+    }
+}
