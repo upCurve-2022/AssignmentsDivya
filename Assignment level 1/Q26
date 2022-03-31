@@ -1,0 +1,24 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class StringPalindrome {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        int i=0,j=s.length() - 1;
+        while(i<j)
+        {
+            if(s.charAt(i)!=s.charAt(j))
+            {
+                System.out.println("Given String is not a palindrome");
+            }
+            i++;
+            j--;
+        }
+        if(j-i==1||i-j==1)
+        {
+            System.out.println("Given String is Palindrome");
+        }
+    }
+}
