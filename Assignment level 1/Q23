@@ -1,0 +1,21 @@
+package com.company;
+
+public class SeriesQ23 {
+    public static void main(String[] args) {
+        int a=1,b=-2;
+        System.out.print(a+" "+b+" ");
+        for(int i=3;i<12;i++)
+        {
+            if(i%2!=0)
+            {
+                a=a+3;
+                System.out.print(a+" ");
+            }
+            else
+            {
+                b=b+(-4);
+                System.out.print(b+" ");
+            }
+        }
+    }
+}
