@@ -1,0 +1,11 @@
+package com.company;
+
+public class ImmutableStrings {
+    public static void main(String[] args) {
+        String s="Java";
+        s.concat("Immutable");  //string is not changing
+        System.out.println(s);
+        s=s.concat("Immutable");  //creating new object.
+        System.out.println(s);
+    }
+}
