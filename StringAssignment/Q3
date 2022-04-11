@@ -1,0 +1,25 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class OnlyIntString {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        int flag = 0;
+        for(int i=0;i<a.length();i++)
+        {
+            if(a.charAt(i)>='0' && a.charAt(i)<='9')
+                flag = 1;
+            else
+            {
+                flag = 0;
+                break;
+            }
+        }
+        if(flag==1)
+            System.out.println("String is only integer");
+        else
+            System.out.println("String is not integer");
+    }
+}
