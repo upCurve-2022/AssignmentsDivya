@@ -1,0 +1,14 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class EmptyString {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        if(a.isEmpty())
+            System.out.println("True");
+        else
+            System.out.println("False");
+    }
+}
