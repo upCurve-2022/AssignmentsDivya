@@ -1,0 +1,42 @@
+import java.util.*;
+public class Main
+{
+    // Driver program 
+    public static void main(String[] args) 
+    {
+        //Take input from the user
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter the string: ");
+        String s1=sc.nextLine();        
+        System.out.println("Enter the string: ");
+        String s2=sc.nextLine();
+        //Compare two strings
+        System.out.println("Are the two strings equal?" + s1.equals(s2));      
+    }
+}
+
+
+
+
+
+
+
+
+
+
+public class Main
+{
+   public static void main(String []args)
+   {
+      String s1 = "Study tonight";
+      System.out.println("The entered string is "+s1);
+      String s2 = "Study tonight";
+      System.out.println("The entered string is "+s2);
+      System.out.println("Are the two strings equal?");
+      //Compare the strings using == operator
+      if(s1 == s2)
+      System.out.println("Yes the entered strings are equal ");
+      else
+      System.out.println("No the entered strings are not equal ");
+   }
+}
