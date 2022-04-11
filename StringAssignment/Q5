@@ -1,0 +1,17 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class tStringLength {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String a = sc.nextLine();
+        char[] strCharArray=a.toCharArray();
+        int count=0;
+        for(char c:strCharArray)
+        {
+            count++;
+        }
+        System.out.println(count);
+    }
+}
